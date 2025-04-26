@@ -1,5 +1,6 @@
 import React from "react";
 import { FixedSizeList as List } from "react-window";
+import Navbar from './Navbar.jsx'
 
 const WeatherTypes = () => {
   const weatherList = [
@@ -24,6 +25,8 @@ const WeatherTypes = () => {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden">
 
       {/* Background Video */}
@@ -60,6 +63,7 @@ const WeatherTypes = () => {
       </div>
 
     </div>
+    </>
   );
 };
 

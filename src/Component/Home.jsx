@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import WeatherCard from './WeatherCard.jsx'
+import Navbar from './Navbar.jsx'
 
 function Home() {
   const [city, setCity] = useState('')
@@ -61,6 +62,7 @@ function Home() {
   
   return (
     <>
+    <Navbar/>
     <video
     src={videosrc}
     muted
