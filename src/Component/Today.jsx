@@ -30,14 +30,16 @@ const WeatherTypes = () => {
     <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden">
 
       {/* Background Video */}
-      <img
-        src="/videos/Clear.jpeg"
+      <video
+        src="/videos/partyCloud.mp4"
         muted
         autoPlay
+        poster={'/videos/Clear.jpeg'}
         loop
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-      />
+      >
+     </video>
 
       {/* Foreground Content */}
       <div className="relative w-full max-w-4xl h-[600px] mt-20">
