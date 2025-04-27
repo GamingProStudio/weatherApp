@@ -4,7 +4,7 @@ import Navbar from './Navbar.jsx'
 import PreloadVideos from './preload.jsx'
 
 function Home() {
-  const [city, setCity] = useState('')
+  const [city, setCity] = useState('Lucknow')
   const [cityData, setCityData] = useState('Lucknow')
   const [data, setData] = useState('Lucknow')
   const [error, setError] = useState('')
