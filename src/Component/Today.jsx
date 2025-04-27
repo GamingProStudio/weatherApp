@@ -30,8 +30,8 @@ const WeatherTypes = () => {
     <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden">
 
       {/* Background Video */}
-      <video
-        src="/videos/Cloudy.mp4"
+      <img
+        src="/videos/Clear.jpeg"
         muted
         autoPlay
         loop
