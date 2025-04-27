@@ -2,7 +2,7 @@ import React from 'react';
 // If you're using a custom Button component, import it properly
 // Or use simple <button> instead if Button is not available
 
-export default function Lost() { // Capital L
+export default function Custom404() { // Capital L
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-100 to-blue-100 p-4">
       <img 
