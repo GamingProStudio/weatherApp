@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import WeatherCard from './WeatherCard.jsx'
 import Navbar from './Navbar.jsx'
+import PreloadVideos from './preload.jsx'
 
 function Home() {
   const [city, setCity] = useState('')
@@ -42,7 +43,8 @@ function Home() {
         return "/videos/Thunderstrom.mp4"
       case "Mist":
         return "/videos/Mist.mp4"
-      case "Partly cloudy" && "Partly Cloudy":
+      case "Partly cloudy":
+      case "Partly Cloudy":
         return "/videos/partyCloud.mp4"
       case "Sunny":
         return "/videos/Sunny.mp4"
@@ -62,15 +64,17 @@ function Home() {
   
   return (
     <>
-    <Navbar/>
+  <Navbar/>
+  <PreloadVideos/>
     <video
+    key={videosrc}
     src={videosrc}
     muted
     autoPlay
     loop
+    poster={'/videos/Clear.jpeg'}
     playsInline
-    className="absolute top-0 w-full h-screen left-0 object-cover z-[-1]"
-    >
+    className="absolute top-0 w-full h-screen left-0 object-cover z-[-1]">
     </video>
       <div className="container flex justify-center  h-screen content-center px-4">
         <div className="w-full max-w-md mt-[220px] mx-auto">
